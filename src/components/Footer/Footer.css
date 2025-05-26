@@ -316,6 +316,6 @@
     }
     
     .copyright {
-        color: var(--text-color, #ffffff);
+        color: var(--text-color);
     }
 }
