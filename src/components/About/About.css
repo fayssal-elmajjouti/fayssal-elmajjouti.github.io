@@ -1,0 +1,209 @@
+.about{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-achievements{
+    display: flex;
+    gap: 70px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-achievement{
+    background-color: var(--color-beige);
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    height: 120px;
+    box-shadow: 0 0 15px 0px #dbdbdb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-achievement:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px 0px rgba(219, 219, 219, 0.8);
+}
+
+.about-achievement img{
+    width: 30px;
+    margin-bottom: 12px;
+}
+
+.about-achievement h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 8px 0;
+    color: var(--color-primary);
+}
+
+.about-achievement p{
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .about {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding: 0 15px;
+    }
+    
+    .about-achievements {
+        gap: 50px;
+    }
+    
+    .about-achievement {
+        width: 180px;
+        height: 110px;
+        padding: 18px;
+    }
+    
+    .about-achievement img {
+        width: 28px;
+        margin-bottom: 10px;
+    }
+    
+    .about-achievement h1 {
+        font-size: 28px;
+    }
+    
+    .about-achievement p {
+        font-size: 13px;
+    }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 768px) {
+    .about {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+    
+    .about-achievements {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .about-achievement {
+        width: 160px;
+        height: 100px;
+        padding: 15px;
+    }
+    
+    .about-achievement img {
+        width: 26px;
+        margin-bottom: 8px;
+    }
+    
+    .about-achievement h1 {
+        font-size: 24px;
+        margin: 6px 0;
+    }
+    
+    .about-achievement p {
+        font-size: 12px;
+    }
+}
+
+/* Mobile Portrait */
+@media screen and (max-width: 480px) {
+    .about {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 0 8px;
+    }
+    
+    .about-achievements {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .about-achievement {
+        width: 100%;
+        max-width: 280px;
+        height: 90px;
+        padding: 12px;
+        margin: 0 auto;
+    }
+    
+    .about-achievement img {
+        width: 24px;
+        margin-bottom: 6px;
+    }
+    
+    .about-achievement h1 {
+        font-size: 22px;
+        margin: 4px 0;
+    }
+    
+    .about-achievement p {
+        font-size: 11px;
+    }
+}
+
+/* Very Small Mobile */
+@media screen and (max-width: 360px) {
+    .about {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0 5px;
+    }
+    
+    .about-achievements {
+        gap: 15px;
+    }
+    
+    .about-achievement {
+        max-width: 250px;
+        height: 80px;
+        padding: 10px;
+    }
+    
+    .about-achievement img {
+        width: 22px;
+        margin-bottom: 5px;
+    }
+    
+    .about-achievement h1 {
+        font-size: 20px;
+        margin: 3px 0;
+    }
+    
+    .about-achievement p {
+        font-size: 10px;
+    }
+}
+
+/* Horizontal Layout for Small Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+    .about-achievements {
+        flex-direction: row;
+        gap: 25px;
+    }
+    
+    .about-achievement {
+        width: 140px;
+        height: 95px;
+        flex: 1;
+        max-width: 200px;
+    }
+}

@@ -1,0 +1,412 @@
+.contactContainer{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 0 20px;
+}
+
+.contactContainer h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
+
+.contactInfos{
+    display: flex;
+    width: auto;
+    max-width: 1024px;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 20px;
+    background: #fefefe;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 #d9d9d9;
+}
+
+.cordonnees{
+    width: 40%;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cordonnees .email, .cordonnees .phone, .cordonnees .address{
+    display: flex;
+    background: var(--accent);
+    padding: 20px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cordonnees .infosperso{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cordonnees .infosperso a, .cordonnees .infosperso span{
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.formsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.forms div{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input{
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #bababa;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea{
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid #bababa;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 50px;
+}
+
+.submit{
+    padding: 10px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg,var(--color-secondary) 0.36%,var(--color-primary) 102.06%);
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    width: fit-content;
+    height: auto;
+    border: none;
+}
+
+.submit:hover{
+    transform: scale(1.05);
+    color: var(--accent);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin: 20px;
+    max-width: 400px;
+    width: 90%;
+}
+
+.popup-content button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+
+/* Large tablets and small desktops */
+@media screen and (max-width: 1024px) {
+    .contactContainer {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding: 0 15px;
+    }
+
+    .contactInfos {
+        max-width: 900px;
+        gap: 30px;
+        padding: 15px;
+    }
+
+    .contactContainer h2 {
+        font-size: 36px;
+        padding: 15px;
+    }
+
+    .cordonnees, .formsContainer {
+        padding: 15px;
+    }
+
+    .cordonnees .email, .cordonnees .phone, .cordonnees .address {
+        padding: 15px;
+    }
+}
+
+/* Standard tablets */
+@media screen and (max-width: 768px) {
+    .contactContainer {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+
+    .contactContainer h2 {
+        font-size: 32px;
+        padding: 10px;
+    }
+
+    .contactInfos {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .cordonnees, .formsContainer {
+        width: auto;
+        padding: 10px;
+    }
+
+    .cordonnees .email, .cordonnees .phone, .cordonnees .address {
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .cordonnees .email h4, .cordonnees .phone h4, .cordonnees .address h4 {
+        margin: 0;
+    }
+
+    .cordonnees .infosperso a, .cordonnees .infosperso span {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .forms {
+        gap: 12px;
+    }
+
+    .submit {
+        padding: 12px 30px;
+        align-self: center;
+    }
+}
+
+/* Mobile landscape and small tablets */
+@media screen and (max-width: 640px) {
+    .contactContainer {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .contactContainer h2 {
+        font-size: 28px;
+    }
+
+    .contactInfos {
+        gap: 15px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .cordonnees .email, .cordonnees .phone, .cordonnees .address {
+        padding: 12px;
+        border-radius: 15px;
+    }
+
+    input, textarea {
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    .submit {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile portrait */
+@media screen and (max-width: 480px) {
+    .contactContainer {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0 8px;
+    }
+
+    .contactContainer h2 {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    .contactInfos {
+        gap: 12px;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .cordonnees, .formsContainer {
+        padding: 8px;
+        gap: 15px;
+    }
+
+    .cordonnees .email, .cordonnees .phone, .cordonnees .address {
+        padding: 10px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+
+    .cordonnees .email h4, .cordonnees .phone h4, .cordonnees .address h4 {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .cordonnees p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .forms div label {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    input {
+        height: 40px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 80px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .submit {
+        padding: 8px 20px;
+        font-size: 13px;
+        margin: 10px auto 0;
+    }
+
+    .submit:hover {
+        transform: scale(1.02);
+    }
+
+    .popup-content {
+        padding: 1.5rem;
+        margin: 15px;
+    }
+
+    .popup-content button {
+        padding: 0.4rem 0.8rem;
+        font-size: 14px;
+    }
+}
+
+/* Very small mobile devices */
+@media screen and (max-width: 360px) {
+    .contactContainer {
+        padding: 0 5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .contactContainer h2 {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .contactInfos {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .cordonnees, .formsContainer {
+        padding: 5px;
+    }
+
+    .cordonnees .email, .cordonnees .phone, .cordonnees .address {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .cordonnees .email h4, .cordonnees .phone h4, .cordonnees .address h4 {
+        font-size: 13px;
+    }
+
+    input {
+        height: 16px;
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    textarea {
+        height: 50px;
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    .submit {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+
+    .popup-content {
+        padding: 1rem;
+        margin: 10px;
+    }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .contactContainer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contactContainer h2 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .popup-content {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}

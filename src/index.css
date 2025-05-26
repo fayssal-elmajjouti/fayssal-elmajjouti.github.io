@@ -1,0 +1,33 @@
+
+:root {
+  --bg-color: #fffaf0;
+  --color-primary: #183B4E;
+  --color-secondary: #27548A;
+  --accent: #DDA853;
+  --color-beige:#F5EEDC;
+}
+/* [data-theme='dark'] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: inter;
+}
+body{
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--color-primary);
+}
+
+@media screen and (max-width:460px){
+  body #root{
+    width: fit-content;
+    overflow: hidden;
+  }
+}
+

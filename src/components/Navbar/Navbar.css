@@ -1,0 +1,312 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+    position: relative;
+    width: calc(100% - 340px); /* Ensure proper width calculation */
+}
+
+.logo {
+    flex-shrink: 0; /* Prevent logo from shrinking */
+    order: 1; /* Logo comes first (left side) */
+}
+
+.logo img{
+    display: block; /* Changed from flex to block */
+    width: 130px;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 60px;
+    order: 2; /* Menu comes second (middle) */
+}
+
+.nav-menu li{
+    list-style: none;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.nav-connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg,var(--color-secondary) 0.36%,var(--color-primary) 102.06%);
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    order: 3; /* Connect button comes last (right side) */
+}
+
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+
+.nav-connect:hover a{
+    color: var(--accent);
+}
+
+.nav-connect a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu * {
+    box-sizing: border-box;
+}
+
+.nav-menu li {
+    display: inline-block;
+    list-style: outside none none;
+    padding: 0;
+}
+
+.nav-menu a {
+    padding: 0.5em 0;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.nav-menu a:before,
+.nav-menu a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.nav-menu a:before {
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: var(--accent);
+}
+
+.nav-menu a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: var(--accent);
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+}
+
+.nav-menu a:hover:before,
+.nav-menu .current a:before {
+    opacity: 1;
+    width: 100%;
+}
+
+.nav-menu a:hover:after,
+.nav-menu .current a:after {
+    max-width: 100%;
+}
+
+/* Mobile menu toggle button */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    order: 3; /* Ensure hamburger is on the right */
+    margin-left: auto; /* Push to the right */
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-primary);
+    margin: 3px 0;
+    transition: 0.3s;
+    transform-origin: center;
+}
+.nav-toggle.active{
+    background: var(--color-beige);
+    z-index: 9999;
+    border-radius: 20px;
+}
+.nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+
+/* Large tablets and small desktops */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        margin: 20px 60px;
+        width: calc(100% - 120px);
+    }
+    
+    .nav-menu {
+        gap: 40px;
+        font-size: 18px;
+    }
+    
+    .nav-connect {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+    
+    .logo img {
+        width: 110px;
+    }
+}
+
+/* Standard tablets */
+@media screen and (max-width: 768px) {
+    .navbar {
+        margin: 20px 40px;
+        width: calc(100% - 80px);
+    }
+    
+    .nav-menu {
+        gap: 30px;
+        font-size: 16px;
+    }
+    
+    .nav-connect {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    
+    .logo img {
+        width: 100px;
+    }
+}
+
+/* Mobile styles - LOGO BACK TO LEFT */
+@media screen and (max-width: 640px) {
+    .navbar {
+        margin: 15px 20px;
+        width: calc(100% - 40px);
+        justify-content: space-between; /* Ensure space between logo and hamburger */
+    }
+    
+    .logo {
+        order: 1; /* Logo first (left) on mobile */
+    }
+    
+    .nav-toggle {
+        display: flex;
+        order: 3; /* Hamburger last (right) */
+        margin-left: auto; /* Ensure it's pushed to the right */
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        font-size: 24px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+        order: 2; /* Menu in the middle (but hidden) */
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        text-align: center;
+    }
+    
+    .nav-menu li a {
+        color: white;
+    }
+    
+    /* HIDE THE CONNECT BUTTON ON MOBILE */
+    .nav-connect {
+        display: none;
+    }
+    
+    .logo img {
+        width: 90px;
+    }
+}
+
+/* Small mobile styles */
+@media screen and (max-width: 480px) {
+    .navbar {
+        margin: 10px 15px;
+        width: calc(100% - 30px);
+    }
+    
+    .nav-menu {
+        gap: 30px;
+        font-size: 20px;
+    }
+    
+    .logo img {
+        width: 80px;
+    }
+    
+    /* Ensure connect button stays hidden */
+    .nav-connect {
+        display: none;
+    }
+}
+
+/* Very small mobile styles */
+@media screen and (max-width: 360px) {
+    .navbar {
+        margin: 10px;
+        width: calc(100% - 20px);
+    }
+    
+    .logo img {
+        width: 70px;
+    }
+    
+    .nav-menu {
+        gap: 25px;
+        font-size: 18px;
+    }
+    
+    /* Ensure connect button stays hidden */
+    .nav-connect {
+        display: none;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) and (max-width: 768px) {
+    .nav-menu {
+        gap: 20px;
+        font-size: 18px;
+    }
+    
+    /* Keep connect button hidden in landscape mobile too */
+    .nav-connect {
+        display: none;
+    }
+}
