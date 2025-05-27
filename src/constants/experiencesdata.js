@@ -22,7 +22,7 @@ const experiences =[
         year:'Sep 2019 - Mars 2020',
         entreprise:'Egio Digital',
         city:'Rabat/Morocco',
-        poste:'Web Developer - Stage',
+        poste:'Web Developer',
         description:'',
         technologies:["Prestashop", "Javascript", "CSS", "SASS", "Tailwind", "GitLab", "Git"]
     },
