@@ -31,7 +31,7 @@ const experiences =[
         year:'Avr 2021 - Oct 2021',
         entreprise:'Groupe Scolaire Nour Al Ouloum',
         city:'Salé/Morocco',
-        poste:'Technicien en maintenance informatique',
+        poste:'Computer maintenance technician',
         description:'',
         technologies:["Wordpress", "SQL", "Excel", "Design"]
     },
@@ -40,7 +40,7 @@ const experiences =[
         year:'Oct 2021 - Mars 2022',
         entreprise:'Linux Constructor',
         city:'Buccarest/Roumanie',
-        poste:'Gestionnaire de base de données',
+        poste:'database administrator',
         description:'',
         technologies:["Excel", "SQL"]
     },

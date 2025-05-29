@@ -97,7 +97,7 @@ const Hero = () => {
             whileInView={{opacity:1, y: 0}}
             initial={{opacity:1, y: -100}}
             transition={{duration:0.5}}
-            >Passionate Web developer, specialized in creating applications and e-commerce websites. Expert in PHP, Laravel, React.js, Vue.js, Wordpress</motion.p>
+            >Passionate Web developer, specialized in creating applications and e-commerce websites. Expert in PHP, Laravel, React.js, Vue.js, Wordpress<div>Fluent in English, French, German, and Arabic.</div></motion.p>
             <motion.div
             whileInView={{opacity:1, y: 0}}
             initial={{opacity:1, y: -100}}
