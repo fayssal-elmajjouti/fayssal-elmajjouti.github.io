@@ -22,6 +22,7 @@ import siteweb_amexiaetudes from '../assets/projects/mainimage/siteweb_amexiaetu
 import siteweb_nostalgia from '../assets/projects/mainimage/siteweb_nostalgia.jpg'
 import siteweb_niyamaghribiya from '../assets/projects/mainimage/siteweb_niyamaghribiya.jpg'
 import siteweb_fspcrabat from '../assets/projects/mainimage/siteweb_fspcrabat.jpg'
+import siteweb_expofspcrabat from '../assets/projects/mainimage/siteweb_expofspcrabat.jpg'
 
 // import siteweb_ciexpansion from '../assets/projects/mainimage/siteweb_ciexpansion.jpg'
 // import siteweb_caliburger from '../assets/projects/mainimage/siteweb_caliburger.jpg'
@@ -159,6 +160,11 @@ const mywork =[
         num:26,
         name:'FSPCRABAT',
         image_project:siteweb_fspcrabat
+    },
+    {
+        num:27,
+        name:'EXPO FSPCRABAT',
+        image_project:siteweb_expofspcrabat
     },
 
 ]
