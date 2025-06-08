@@ -32,25 +32,6 @@ const Contact = () => {
   };
 
 
-  const handleNameChange = (e) => {
-  const value = e.target.value;
-  if (/^[A-Za-z\s]*$/.test(value)) {
-    e.target.setCustomValidity('');
-  } else {
-    e.target.setCustomValidity('Only letters and spaces are allowed');
-  }
-};
-
-const handlePhoneChange = (e) => {
-  const value = e.target.value;
-  if (/^\d*$/.test(value)) {
-    e.target.setCustomValidity('');
-  } else {
-    e.target.setCustomValidity('Only numbers are allowed');
-  }
-};
-
-
 
   return (
     <div id='contact' className='contactContainer'>
@@ -96,14 +77,14 @@ const handlePhoneChange = (e) => {
           <form className='forms' ref={form} onSubmit={sendEmail}>
             <div>
                 <label>Full name</label>
-                <input
-                  type="text"
-                  name="user_name"
-                  required
-                  pattern="[A-Za-z\s]+"
-                  title="Please enter letters only"
-                  onInput={handleNameChange}
-                />
+<input
+  type="text"
+  name="user_name"
+  required
+  pattern="[A-Za-z\s]+"
+  title="Please enter letters only"
+  placeholder=""
+/>
             </div>
             <div>
                <label>Email</label>
@@ -111,15 +92,15 @@ const handlePhoneChange = (e) => {
             </div>
             <div>
               <label>Phone</label>
-              <input
-                type="tel"
-                name="user_phone"
-                required
-                pattern="[0-9]+"
-                inputMode="numeric"
-                title="Please enter numbers only"
-                onInput={handlePhoneChange}
-              />
+<input
+  type="tel"
+  name="user_phone"
+  required
+  pattern="[0-9]+"
+  inputMode="numeric"
+  title="Please enter numbers only"
+  placeholder=""
+/>
             </div>
             <div>
               <label>Object</label>
