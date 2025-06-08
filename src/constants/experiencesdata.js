@@ -42,7 +42,7 @@ const experiences =[
         city:'Buccarest/Roumanie',
         poste:'database administrator',
         description:'',
-        technologies:["Excel", "SQL"]
+        technologies:["Excel", "SQL", "Python"]
     },
     {
         num:6,
