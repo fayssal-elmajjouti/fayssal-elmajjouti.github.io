@@ -1,7 +1,7 @@
 const experiences =[
     {
         num:1,
-        year:'Fev 2017 - Avr 2017',
+        year:'Feb 2017 - Apr 2017',
         entreprise:'Al Barid Bank',
         city:'Rabat/Morocco',
         poste:'Web Developer - Stage',
@@ -10,7 +10,7 @@ const experiences =[
     },
     {
         num:2,
-        year:'Avr 2019 - Jui 2019',
+        year:'Apr 2019 - Jun 2019',
         entreprise:'Mediating',
         city:'Rabat/Morocco',
         poste:'Web Developer - Stage',
@@ -19,7 +19,7 @@ const experiences =[
     },
     {
         num:3,
-        year:'Sep 2019 - Mars 2020',
+        year:'Sep 2019 - March 2020',
         entreprise:'Egio Digital',
         city:'Rabat/Morocco',
         poste:'Web Developer',
@@ -28,28 +28,37 @@ const experiences =[
     },
     {
         num:4,
-        year:'Avr 2021 - Oct 2021',
+        year:'Apr 2021 - Oct 2021',
         entreprise:'Groupe Scolaire Nour Al Ouloum',
         city:'Salé/Morocco',
-        poste:'Computer maintenance technician',
+        poste:'Computer Maintenance Technician',
         description:'',
         technologies:["Wordpress", "SQL", "Excel", "Design"]
     },
     {
         num:5,
-        year:'Oct 2021 - Mars 2022',
+        year:'Oct 2021 - March 2022',
         entreprise:'Linux Constructor',
         city:'Buccarest/Roumanie',
-        poste:'database administrator',
+        poste:'Database Administrator',
         description:'',
         technologies:["Excel", "SQL", "Python"]
     },
     {
         num:6,
-        year:'Nov 2022 - Mai 2025',
+        year:'Nov 2022 - May 2025',
         entreprise:'Clear Impulse',
         city:'Rabat/Morocco',
-        poste:'Senior Web Developer ',
+        poste:'Web Developer ',
+        description:'',
+        technologies:["Wordpress", "Laravel", "Filament", "Vue JS", "CSS", "JavaScript"]
+    },
+    {
+        num:7,
+        year:'Jun 2025 - Today',
+        entreprise:'Avant Scene',
+        city:'Rabat/Morocco',
+        poste:'Web and Application Developer',
         description:'',
         technologies:["Wordpress", "Laravel", "Filament", "Vue JS", "CSS", "JavaScript"]
     }
