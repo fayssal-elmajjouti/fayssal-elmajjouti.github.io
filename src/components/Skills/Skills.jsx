@@ -63,6 +63,7 @@ const tabs = [
     { id: 37, category: "divers", label: "Méthodes agiles" },
     { id: 38, category: "divers", label: "cPanel" },
     { id: 39, category: "divers", label: "Gestion de projet" },
+    { id: 40, category: "divers", label: "REST API" },
     
   ];
   
