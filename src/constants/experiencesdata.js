@@ -52,16 +52,16 @@ const experiences =[
         poste:'Web Developer ',
         description:'',
         technologies:["Wordpress", "Laravel", "Filament", "Vue JS", "CSS", "JavaScript"]
-    },
-    {
-        num:7,
-        year:'Jun 2025 - Today',
-        entreprise:'Avant Scene',
-        city:'Rabat/Morocco',
-        poste:'Web and Application Developer',
-        description:'',
-        technologies:["Wordpress", "Laravel", "Filament", "Vue JS", "CSS", "JavaScript"]
     }
+    // {
+    //     num:7,
+    //     year:'Jun 2025 - Today',
+    //     entreprise:'Avant Scene',
+    //     city:'Rabat/Morocco',
+    //     poste:'Web and Application Developer',
+    //     description:'',
+    //     technologies:["Wordpress", "Laravel", "Filament", "Vue JS", "CSS", "JavaScript"]
+    // }
 ]
 
 
