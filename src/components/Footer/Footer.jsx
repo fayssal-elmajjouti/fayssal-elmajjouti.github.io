@@ -12,7 +12,7 @@ const Footer = () => {
       <div className='ligne'></div>
       <div className='findme'>
         <div>FIND ME ON</div>
-        <div>Feel free to <span>connect</span> with me</div>
+        {/* <div>Feel free to <span>connect</span> with me</div> */}
       </div>
       <div className="rs">
         <ul>
