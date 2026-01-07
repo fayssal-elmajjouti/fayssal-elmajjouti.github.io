@@ -7,7 +7,7 @@ import siteweb_motatawi3 from '../assets/projects/mainimage/siteweb_motatawi3.jp
 import siteweb_moubdiaat from '../assets/projects/mainimage/siteweb_moubdiaat.jpg'
 import siteweb_rcac2022 from '../assets/projects/mainimage/siteweb_rcac2022.jpg'
 import siteweb_siel from '../assets/projects/mainimage/siteweb_siel.jpg'
-import siteweb_silej from '../assets/projects/mainimage/siteweb_silej_new.png'
+import siteweb_silej from '../assets/projects/mainimage/siteweb_silej_new1.png'
 import siteweb_srconsulting from '../assets/projects/mainimage/siteweb_srconsulting.jpg'
 // import siteweb_ticketi from '../assets/projects/mainimage/siteweb_ticketi.jpg'
 import siteweb_toiturepro from '../assets/projects/mainimage/siteweb_toiturepro.jpg'
