@@ -19,7 +19,7 @@ const experiences =[
     },
     {
         num:3,
-        year:'Sep 2019 - March 2020',
+        year:'Sep 2020 - March 2021',
         entreprise:'Egio Digital',
         city:'Rabat/Morocco',
         poste:'Web Developer',
