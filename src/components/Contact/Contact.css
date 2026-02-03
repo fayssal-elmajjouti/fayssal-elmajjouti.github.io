@@ -14,18 +14,16 @@
 .contactInfos{
     display: flex;
     width: auto;
-    max-width: 1024px;
+    max-width: 1200px;
     margin: 0 auto;
     gap: 40px;
     padding: 20px;
-    background: #fefefe;
     border-radius: 30px;
-    box-shadow: 0 0 20px 0 #d9d9d9;
 }
 
 .cordonnees{
     width: 40%;
-    padding: 20px;
+    padding: 0 20px;
     gap: 20px;
     display: flex;
     flex-direction: column;
@@ -33,13 +31,14 @@
 
 .cordonnees .email, .cordonnees .phone, .cordonnees .address{
     display: flex;
-    background: var(--accent);
+    /* background: var(--accent); */
     padding: 20px;
-    border-radius: 20px;
     flex-wrap: wrap;
     align-items: center;
 }
-
+.cordonnees img{
+    width: 40px;
+}
 .cordonnees .infosperso{
     gap: 20px;
     display: flex;
@@ -47,7 +46,7 @@
 }
 
 .cordonnees .infosperso a, .cordonnees .infosperso span{
-    color: white;
+    color: black;
     margin-left: 5px;
     text-decoration: none;
     word-break: break-word;
@@ -64,37 +63,47 @@
 .forms{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 24px;
 }
 
 .forms div{
     display: flex;
     flex-direction: column;
-    gap: 6px;
 }
 
 input{
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid #ececec;
+    height: 34px;
+    border-radius: 0;
     outline: 0;
-    padding: 10px;
+    padding: 6px;
     width: 100%;
     box-sizing: border-box;
-    box-shadow: 0 0 20px -4px #f0f0f0;
+    background: transparent;
+    border-bottom: 1px solid #cacaca !important;
+    border: 0;
 }
-
+input::placeholder{
+    color: #ababab;
+    font-weight: 200;
+    font-family: "montsserat";
+}
+textarea::placeholder{
+    color: #ababab;
+    font-weight: 200;
+    font-family: "montsserat";
+}
 textarea{
     height: 70px;
-    border-radius: 10px;
-    border: 1px solid #ececec;
+    border-radius: 0px;
+    border-bottom: 1px solid black !important;
+    border: 0;
     outline: 0;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
     resize: vertical;
     min-height: 50px;
-    box-shadow: 0 0 20px -4px #f0f0f0;
+    background: transparent;
 }
 
 .submit{
@@ -414,5 +423,45 @@ textarea{
 }
 
 .box-contact{
-    background:gray;
+    width: 100%;
+    height: 140px;
+}
+.cordonnees p{
+    font-size: 40px;
+    font-size: 400;
+}
+.formsContainer h4{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.infosperso .email{
+    background: #F5EEDC;
+    width: 240px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 16px;
+}
+.infosperso .phone{
+    background: #F5EEDC;
+    width: 240px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 16px;
+}
+.infosperso .address{
+    background: #F5EEDC;
+    width: 240px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 16px;
 }

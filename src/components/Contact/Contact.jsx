@@ -61,26 +61,35 @@ const Contact = () => {
           
           <p>Get in touch with us today to enhance your digital presence.</p>
             <div className='infosperso'>
-              <div className='email box-contact'>
-                <img src={email} alt=''/>
-                <h4>Email Address</h4>
-                <a href='mailo:fayssal.elamjjouti@gmail.com'> fayssal.elmajjouti@gmail.com</a>
+              <div className='box-contact'>
+                <div className='email'>
+                  <img src={email} alt=''/>
+                  <h4>Email Address</h4>
+                  <a href='mailo:fayssal.elamjjouti@gmail.com'> fayssal.elmajjouti@gmail.com</a>
+                </div>
+                
               </div>
-              <div className='phone box-contact'>
-                <img src={phone} alt=''/>
-                <h4>Phone Number</h4>
-                <a href='tel:+212689574018'> (+212) 689 57 40 18</a>
+              <div className='box-contact'>
+                <div className='phone'>
+                  <img src={phone} alt=''/>
+                  <h4>Phone Number</h4>
+                  <a href='tel:+212689574018'> (+212) 689 57 40 18</a>
+                </div>
+                
               </div>
-              <div className='address box-contact'>
-                <img src={location} alt=''/>
-                <h4>Location</h4>
-                <span>Rabat-Salé</span>
+              <div className='box-contact'>
+              <div className='address'>
+                  <img src={location} alt=''/>
+                  <h4>Location</h4>
+                  <span>Rabat-Salé, Morocco</span>
+              </div>
+                
               </div>
               
             </div>
         </div>
         <div className='formsContainer'>
-          <div>Have a project in mind or want to collaborate? Feel free to reach out.
+          <div>Have a project in mind or want to collaborate?Feel free to reach out.
             I'm always open to discussing new opportunities.</div>
           <h4>Leave A Comment</h4>
           <form className='forms' ref={form} onSubmit={sendEmail}>
