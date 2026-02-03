@@ -108,6 +108,8 @@
 
 #projects{
     overflow: hidden;
+    /* max-width: 1200px;
+    margin: 100px auto 70px; */
 }
 
 .box-image:hover .NomProject{

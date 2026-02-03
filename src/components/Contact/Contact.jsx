@@ -6,6 +6,11 @@ import lottieContact from '../../assets/contact.json'
 import Lottie from 'lottie-react'
 import emailjs from '@emailjs/browser';
 
+import email from '../../assets/gmail.png'
+import location from '../../assets/broche-de-localisation.png'
+import phone from '../../assets/appel.png'
+
+
 const Contact = () => {
 
   const form = useRef();
@@ -46,61 +51,65 @@ const Contact = () => {
       transition={{duration:0.5}}
       className='contactInfos'>
         <div className='cordonnees'>
-          <div style={{width:"50%", margin:"0 auto"}}>
+          {/* <div style={{width:"50%", margin:"0 auto"}}>
             <Lottie
               animationData={lottieContact}
               loop
               autoplay
             />
-          </div>
+          </div> */}
           
-          <p>Have a project in mind or want to collaborate? Feel free to reach out.
-            I'm always open to discussing new opportunities.</p>
+          <p>Get in touch with us today to enhance your digital presence.</p>
             <div className='infosperso'>
-              <div className='email'>
-                <h4>Email: </h4>
+              <div className='email box-contact'>
+                <img src={email} alt=''/>
+                <h4>Email Address</h4>
                 <a href='mailo:fayssal.elamjjouti@gmail.com'> fayssal.elmajjouti@gmail.com</a>
               </div>
-              <div className='phone'>
-                <h4>Phone: </h4>
+              <div className='phone box-contact'>
+                <img src={phone} alt=''/>
+                <h4>Phone Number</h4>
                 <a href='tel:+212689574018'> (+212) 689 57 40 18</a>
               </div>
-              <div className='address'>
-                <h4>Address: </h4>
+              <div className='address box-contact'>
+                <img src={location} alt=''/>
+                <h4>Location</h4>
                 <span>Rabat-Salé</span>
               </div>
               
             </div>
         </div>
         <div className='formsContainer'>
-          <h4>Send a message</h4>
+          <div>Have a project in mind or want to collaborate? Feel free to reach out.
+            I'm always open to discussing new opportunities.</div>
+          <h4>Leave A Comment</h4>
           <form className='forms' ref={form} onSubmit={sendEmail}>
             <div>
                 <label>Full name</label>
-<input
-  type="text"
-  name="user_name"
-  required
-  pattern="[A-Za-z\s]+"
-  title="Please enter letters only"
-  placeholder=""
-/>
+                <input
+                  type="text"
+                  name="user_name"
+                  required
+                  pattern="[A-Za-z\s]+"
+                  title="Please enter letters only"
+                  placeholder=""
+                />
             </div>
             <div>
                <label>Email</label>
-                <input type='mail' id='' name="user_email" required className='' placeholder=''/>
+                <input type='mail' id='' name="user_email" required className='' placeholder='example@email.com'/>
             </div>
             <div>
               <label>Phone</label>
-<input
-  type="tel"
-  name="user_phone"
-  required
-  pattern="[0-9]+"
-  inputMode="numeric"
-  title="Please enter numbers only"
-  placeholder=""
-/>
+              <input
+                type="tel"
+                name="user_phone"
+                required
+                pattern="[0-9]+"
+                inputMode="numeric"
+                title="Please enter numbers only"
+                placeholder=""
+              />
             </div>
             <div>
               <label>Object</label>
@@ -108,7 +117,7 @@ const Contact = () => {
             </div>
             <div>
               <label>Message</label>
-              <textarea type='textarea' id='message' name="message" required className='' placeholder=''/>
+              <textarea type='textarea' id='message' name="message" required className='' placeholder='Write your message here ...'/>
             </div>
             <input type="submit" className='submit' value="Send" />
           </form>
