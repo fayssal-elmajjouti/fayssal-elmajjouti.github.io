@@ -95,7 +95,7 @@ textarea::placeholder{
 textarea{
     height: 70px;
     border-radius: 0px;
-    border-bottom: 1px solid black !important;
+    border-bottom: 1px solid #cacaca !important;
     border: 0;
     outline: 0;
     padding: 10px;

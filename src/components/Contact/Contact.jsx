@@ -89,7 +89,8 @@ const Contact = () => {
             </div>
         </div>
         <div className='formsContainer'>
-          <div>Get in touch with us today to elevate your digital presence and start creating unforgettable online experiences. Have questions or need more information? Contact us today and let's start a conversation about how we can help your brand thrive online.</div>
+          <div>Get in touch with us today to elevate your digital presence and start creating unforgettable online experiences. Have questions or need more information? </div>
+          <div>Contact us today and let's start a conversation about how we can help your brand thrive online.</div>
           <h4>Leave A Comment</h4>
           <form className='forms' ref={form} onSubmit={sendEmail}>
             <div>
