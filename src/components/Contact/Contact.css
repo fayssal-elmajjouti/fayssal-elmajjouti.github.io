@@ -164,6 +164,10 @@ textarea{
 
 /* Large tablets and small desktops */
 @media screen and (max-width: 1024px) {
+    .cordonnees p{
+    font-size: 40px;
+    font-size: 400;
+}
     .contactContainer {
         margin-top: 60px;
         margin-bottom: 60px;
@@ -453,8 +457,4 @@ textarea{
     align-items: flex-start;
     gap: 12px;
     border-radius: 16px;
-}
-.cordonnees p{
-    font-size: 40px;
-    font-size: 400;
 }
