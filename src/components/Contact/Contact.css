@@ -458,3 +458,7 @@ textarea{
     gap: 12px;
     border-radius: 16px;
 }
+.cordonnees p{
+    font-size: 40px;
+    line-height: 1.4;
+}
