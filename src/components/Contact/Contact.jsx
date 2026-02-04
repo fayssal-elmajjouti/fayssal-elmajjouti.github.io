@@ -101,7 +101,7 @@ const Contact = () => {
                   required
                   pattern="[A-Za-z\s]+"
                   title="Please enter letters only"
-                  placeholder=""
+                  placeholder="Your full name"
                 />
             </div>
             <div>
