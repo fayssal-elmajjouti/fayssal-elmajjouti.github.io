@@ -75,12 +75,13 @@ input{
     height: 34px;
     border-radius: 0;
     outline: 0;
-    padding: 6px;
+    padding: 6px 0;
     width: 100%;
     box-sizing: border-box;
     background: transparent;
     border-bottom: 1px solid #cacaca !important;
     border: 0;
+    font-size: 13px;
 }
 input::placeholder{
     color: #ababab;
@@ -98,12 +99,13 @@ textarea{
     border-bottom: 1px solid #cacaca !important;
     border: 0;
     outline: 0;
-    padding: 10px;
+    padding: 10px 0;
     width: 100%;
     box-sizing: border-box;
     resize: vertical;
     min-height: 50px;
     background: transparent;
+    font-size: 13px;
 }
 
 .submit{
@@ -381,17 +383,7 @@ textarea{
         font-size: 13px;
     }
 
-    input {
-        height: 16px;
-        padding: 6px 0;
-        font-size: 13px;
-    }
-
-    textarea {
-        height: 50px;
-        padding: 6px 0;
-        font-size: 13px;
-    }
+    
 
     .submit {
         padding: 6px 16px;
