@@ -320,7 +320,7 @@ textarea{
 
     input {
         height: 40px;
-        padding: 8px;
+        padding: 8px 0;
         font-size: 14px;
     }
 
