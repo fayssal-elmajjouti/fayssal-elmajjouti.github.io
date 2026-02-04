@@ -383,13 +383,13 @@ textarea{
 
     input {
         height: 16px;
-        padding: 6px;
+        padding: 6px 0;
         font-size: 13px;
     }
 
     textarea {
         height: 50px;
-        padding: 6px;
+        padding: 6px 0;
         font-size: 13px;
     }
 
