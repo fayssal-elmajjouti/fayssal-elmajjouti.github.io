@@ -180,7 +180,9 @@
         width: 300px;
         padding: 15px;
     }
-    
+    .myprojects-container img{
+        box-shadow: 0 0 13px 0px #b8b8b8;   
+    }
     .myproject-title {
         font-size: 32px;
         margin: 40px auto;
@@ -220,7 +222,9 @@
         width: 280px;
         padding: 12px;
     }
-    
+    .myprojects-container img{
+        box-shadow: 0 0 13px 0px #b8b8b8;   
+    }
     .myproject-title {
         font-size: 28px;
         margin: 30px auto;
@@ -289,7 +293,9 @@
         max-width: 280px;
         padding: 8px;
     }
-    
+    .myprojects-container img{
+        box-shadow: 0 0 13px 0px #b8b8b8;   
+    }
     .myproject-title {
         font-size: 20px;
         margin: 20px auto;
