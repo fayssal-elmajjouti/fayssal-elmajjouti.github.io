@@ -113,7 +113,6 @@ const Contact = () => {
               <input
                 type="tel"
                 name="user_phone"
-                required
                 pattern="[0-9]+"
                 inputMode="numeric"
                 title="Please enter numbers only"
