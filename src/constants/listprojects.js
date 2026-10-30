@@ -21,7 +21,7 @@ import siteweb_cdai from '../assets/projects/mainimage/siteweb_cdai.jpg'
 import siteweb_amexiaetudes from '../assets/projects/mainimage/siteweb_amexiaetudes.jpg'
 import siteweb_nostalgia from '../assets/projects/mainimage/siteweb_nostalgia.jpg'
 import siteweb_niyamaghribiya from '../assets/projects/mainimage/siteweb_niyamaghribiya.jpg'
-import siteweb_fspcrabat from '../assets/projects/mainimage/siteweb_fspcrabat.jpg'
+import siteweb_fspcrabat from '../assets/projects/mainimage/fspcrabat3.png'
 import siteweb_expofspcrabat from '../assets/projects/mainimage/siteweb_expofspcrabat.jpg'
 
 // import siteweb_ciexpansion from '../assets/projects/mainimage/siteweb_ciexpansion.jpg'

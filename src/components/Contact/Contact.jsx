@@ -50,15 +50,7 @@ const Contact = () => {
       initial={{opacity:1, y: -100}}
       transition={{duration:0.5}}
       className='contactInfos'>
-        <div className='cordonnees'>
-          {/* <div style={{width:"50%", margin:"0 auto"}}>
-            <Lottie
-              animationData={lottieContact}
-              loop
-              autoplay
-            />
-          </div> */}
-          
+        <div className='cordonnees'> 
           <p>Get in touch with us today to enhance your digital presence.</p>
             <div className='infosperso'>
               <div className='box-contact'>
@@ -88,58 +80,7 @@ const Contact = () => {
               
             </div>
         </div>
-        <div className='formsContainer'>
-          <div>Get in touch with us today to elevate your digital presence and start creating unforgettable online experiences. Have questions or need more information? </div>
-          <div>Contact us today and let's start a conversation about how we can help your brand thrive online.</div>
-          <h4>Leave A Comment</h4>
-          <form className='forms' ref={form} onSubmit={sendEmail}>
-            <div>
-                <label>Full name</label>
-                <input
-                  type="text"
-                  name="user_name"
-                  required
-                  pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$"
-                  title="Please enter letters only"
-                  placeholder="Your full name"
-                />
-            </div>
-            <div>
-               <label>Email</label>
-                <input type='mail' id='' name="user_email" required className='' placeholder='example@email.com'/>
-            </div>
-            <div>
-              <label>Phone</label>
-              <input
-                type="tel"
-                name="user_phone"
-                pattern="[0-9]+"
-                inputMode="numeric"
-                title="Please enter numbers only"
-                placeholder=""
-              />
-            </div>
-            <div>
-              <label>Object</label>
-              <input type='text' id='' name='object' required className='' placeholder=''/>
-            </div>
-            <div>
-              <label>Message</label>
-              <textarea type='textarea' id='message' name="message" required className='' placeholder='Write your message here ...'/>
-            </div>
-            <input type="submit" className='submit' value="Send" />
-          </form>
-        </div>
       </motion.div>
-
-      {successPopup && (
-  <div className="popup">
-    <div className="popup-content">
-      <p>Message sent successfully!</p>
-      <button onClick={() => setSuccessPopup(false)}>Close</button>
-    </div>
-  </div>
-)}
 
     </div>
   )
